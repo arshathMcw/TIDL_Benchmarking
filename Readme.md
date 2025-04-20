@@ -36,7 +36,7 @@ python3 ./tutorials/run_import_inference_for_detection.py --run_type="IMPORT"
 python3 ./tutorials/run_import_inference_for_detection.py --run_type="INFERENCE"
 ```
 * Make sure have the dataset path and model path in the directory 
-    * For dataset, I created the directory in `edgeai-tensorlab/edgeai-benchmark/dependencies/datasets/own_dataset_for_detection` or you can create your own dataset and change the dirctory . (My dataset [link](./datasets/own_dataset_for_detection/))
+    * For dataset, I created the directory in `edgeai-tensorlab/edgeai-benchmark/dependencies/datasets/own_dataset_for_detection` or you can create your own dataset and change the dirctory . (My dataset [link](./datasets/own_dataset_for_detection/)) . The directory have the both input and output images . 
     * To Get our model [Yolov8m.onnx compatible for TIDL](./model/merged_model_3.onnx)
 ## To run a Benchmarking
 * The script is in the tutorials dorecctory (edgeai-tensorlab/edgeai-benchmark/tutorials/tutorial_detection.py)
