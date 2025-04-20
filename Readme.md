@@ -30,7 +30,7 @@ pyenv activate benchmark
 ## To run example program
 1. The tutorials program is in the directory `edgeai-tensorlab/edgeai-benchmark/tutorials`
 * To run we need to run the script : [link](https://github.com/TexasInstruments/edgeai-tensorlab/blob/main/edgeai-benchmark/run_tutorials_script_pc.sh)
-* The `tutorial_basic1.py` have the import and infernce for the classification model . For Detection model , create a new python file and store our code [here](./code/run_import_inference_for_detection.py) and store it in tutorials director and to run write it in run_tutorials_script_pc.sh
+* The `tutorial_basic1.py` have the import and inference for the classification model . For Detection model , create a new python file and store our code [here](./code/run_import_inference_for_detection.py) and store it in tutorials director and to run write it in run_tutorials_script_pc.sh
 ```py
 python3 ./tutorials/run_import_inference_for_detection.py --run_type="IMPORT"
 python3 ./tutorials/run_import_inference_for_detection.py --run_type="INFERENCE"
@@ -39,7 +39,7 @@ python3 ./tutorials/run_import_inference_for_detection.py --run_type="INFERENCE"
     * For dataset, I created the directory in `edgeai-tensorlab/edgeai-benchmark/dependencies/datasets/own_dataset_for_detection` or you can create your own dataset and change the dirctory . (My dataset [link](./datasets/own_dataset_for_detection/)) . The directory have the both input and output images . 
     * To Get our model [Yolov8m.onnx compatible for TIDL](./model/merged_model_3.onnx)
 ## To run a Benchmarking
-* The script is in the tutorials dorecctory (edgeai-tensorlab/edgeai-benchmark/tutorials/tutorial_detection.py)
+* The script is in the tutorials directory (edgeai-tensorlab/edgeai-benchmark/tutorials/tutorial_detection.py)
 * If you are using ONNX file make sure change the session name and pipeline config into ONNX 
 ```py
 session_name = constants.SESSION_NAME_ONNXRT
@@ -58,5 +58,5 @@ pipeline_configs = {
     )
 }
 ```
-* Then Run the tutuoral script and uncomment the detection runninf file we get the benchmark output
+* Then Run the tutorial script by uncomment the detection running file we get the benchmark output
 ![alt text](image.png)
